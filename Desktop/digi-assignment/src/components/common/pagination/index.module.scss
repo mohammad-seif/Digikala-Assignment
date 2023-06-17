@@ -1,0 +1,46 @@
+.pagination {
+  @include flex-center-y;
+  justify-content: space-between;
+  padding: rem(20) rem(0);
+  margin-top: rem(24);
+  border-top: solid 1px #EAECF0;
+
+  &-prev , &-next {
+    color: #667085;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff
+  }
+
+  &-list {
+    @include flex-center-y;
+    gap: rem(12);
+    &__item {
+        border-radius: rem(8);
+        padding: rem(7) rem(16);
+        color: #667085;
+        @media only screen and (max-width: 798px) {
+          &--active {
+            background-color: red;
+          }
+        }
+        &--active {
+          background-color: #F9FAFB;
+          color: #1D2939;
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  .pagination {
+    &-list {
+      &__item {
+        display: none;
+        &--active {
+          display: block;
+        }
+      }
+    }
+  }
+}

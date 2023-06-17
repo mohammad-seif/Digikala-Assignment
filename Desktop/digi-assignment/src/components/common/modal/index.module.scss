@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+  @include flex-center-xy;
+  &-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 64, 84, 0.7);
+  }
+  &-content {
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+    border-radius: rem(12);
+  }
+}

@@ -1,0 +1,23 @@
+.header {
+  @include flex-center-y;
+  width: 100vw;
+  height: rem(72);
+  position: sticky;
+  border-bottom: solid 1px #EAECF0;
+  background-color: #fff;
+  padding: rem(16) rem(24);
+  gap: rem(12);
+  inset: 0;
+  &-logo {
+    width: rem(32);
+    height: rem(32);
+    &__image {
+      object-fit: cover;
+    }
+  }
+  &-title {
+    color: #101828;
+    font-weight: 700;
+    font-size: rem(16);
+  }
+}

@@ -1,0 +1,10 @@
+.card-wrapper {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: rem(24);
+
+  @media only screen and (max-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

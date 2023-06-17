@@ -1,0 +1,37 @@
+@mixin flex-center-xy($inline: false) {
+  @if $inline {
+    display: inline-flex;
+  }
+  @else {
+    display: flex;
+  }
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-x($inline: false) {
+  @if $inline {
+    display: inline-flex;
+  }
+  @else {
+    display: flex;
+  }
+  justify-content: center;
+}
+
+@mixin flex-center-y($inline: false) {
+  @if $inline {
+    display: inline-flex;
+  }
+  @else {
+    display: flex;
+  }
+  align-items: center;
+}
+
+@mixin absolute-center-xy {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

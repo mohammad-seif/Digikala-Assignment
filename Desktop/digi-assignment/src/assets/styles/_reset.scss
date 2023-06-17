@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+html {
+  font-size: 16px;
+}
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  user-select: none;
+  touch-action: manipulation;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  border-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+}
+input,
+button,
+select,
+textarea {
+  padding: 0;
+  border: none;
+  outline: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+a,
+label,
+button,
+[role='button'] {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}

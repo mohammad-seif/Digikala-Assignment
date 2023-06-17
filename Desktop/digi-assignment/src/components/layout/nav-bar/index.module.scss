@@ -1,0 +1,16 @@
+.nav {
+  &-list {
+    @include flex-center-y;
+    gap: rem(4);
+    &__item {
+      padding: rem(8) rem(12);
+      color: #344054;
+      & > a.active {
+        display: block;
+        color: #175CD3;
+        background: #EFF8FF;
+        border-radius: 6px;
+      }
+    }
+  }
+}
